@@ -1,8 +1,9 @@
 {
-  "name": "nativeui",
-  "version": "0.0.1",
+  "name": "@_inlimbo/nativeui",
+  "description": "UI elements for react native.",
+  "homepage": "https://inlimbo.co",
+  "version": "0.0.4",
   "main": "./app/nativeui.js",
-  "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest"
@@ -22,5 +23,21 @@
   },
   "jest": {
     "preset": "react-native"
+  },
+  "repository": "gitlab:inlimbo/nativeui",
+  "keywords": [
+    "react",
+    "react-native",
+    "react-native-ui",
+    "ui",
+    "ui-kit",
+    "ui-elements",
+    "inlimbo-ui",
+    "components"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/inlimbo/nativeui/issues"
   }
 }

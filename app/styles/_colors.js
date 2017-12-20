@@ -3,18 +3,29 @@ import _ from 'lodash';
 import Color from 'color';
 
 const colors = {
-  prm: Config.PRIMARY_CLR || 'blue',
-  snd: Config.SECONDARY_CLR || 'purple',
-  suc: Config.SUCCESS_CLR || 'green',
-  fal: Config.FAILURE_CLR || 'red',
-  wrn: Config.WARNING_CLR || 'gold',
-  drk: Config.DARK_CLR || 'black',
-  lgt: Config.LIGHT_CLR || 'white',
+  prm: Config.PRIMARY_CLR || 'rgb(148, 171, 244)',
+  snd: Config.SECONDARY_CLR || 'rgb(178, 221, 210)',
+  suc: Config.FAILURE_CLR || 'rgb(76, 205, 143)',
+  fal: Config.SUCCESS_CLR || 'rgb(229, 108, 129)',
+  wrn: Config.WARNING_CLR || 'rgb(241, 173, 92)',
+  drk: Config.DARK_CLR || 'rgb(71, 76, 110)',
+  lgt: Config.LIGHT_CLR || 'rgb(242,239,235)',
 };
 
-colors.trans =  _.mapValues(colors, (v) => {
+var trans =  _.mapValues(colors, (v) => {
   return Color(v).alpha(0.5);
 });
+var dark =  _.mapValues(colors, (v) => {
+  return Color(v).darken(0.3);
+});
+var light =  _.mapValues(colors, (v) => {
+  return Color(v).lighten(0.15);
+});
 
+colors.trans = trans;
+colors.dark = dark;
+colors.light = light;
+
+console.log(colors);
 
 module.exports = colors;

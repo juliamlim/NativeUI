@@ -53,3 +53,11 @@ buck-out/
 */fastlane/report.xml
 */fastlane/Preview.html
 */fastlane/screenshots
+
+# NPM Ignores
+__tests__/
+android/
+ios/
+.buckconfig
+.watchmanconfig
+app.json

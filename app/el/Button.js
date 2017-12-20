@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import {
   Text,
-  TouchableHighlight
+  TouchableHighlight,
+  View
 } from 'react-native';
 
 const styles = require('../styles/main');
@@ -22,18 +23,20 @@ export default class Button extends Component<{}> {
   }
   render() {
     return (
-      <TouchableHighlight
-        style={[
-          styles.btn, 
-          this.props.style, 
-          (this.props.outline) ? styles.btn_otl[this.state.color] : styles.btn_sld[this.state.color]
-        ]}
-        onPress={this.props.onPress}
-        underlayColor={ colors.trans[this.state.color] }>
-        <Text style={
-          (this.props.outline) ? styles.btn_otl__txt[this.state.color] : styles.btn__txt
-          }>Test Text</Text>
-      </TouchableHighlight>
+      <View style={{ justifyContent:'center'}}>
+        <TouchableHighlight
+          style={[
+            styles.btn, 
+            this.props.style, 
+            (this.props.outline) ? styles.btn_otl[this.state.color] : styles.btn_sld[this.state.color]
+          ]}
+          onPress={this.props.onPress}
+          underlayColor={ 
+            (this.props.outline) ? colors.trans[this.state.color] : colors.light[this.state.color]
+            }>
+          {this.props.children}
+        </TouchableHighlight>
+      </View>      
     );
   }
 }
