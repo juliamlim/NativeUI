@@ -1,15 +1,18 @@
 {
   "name": "nativeui",
   "version": "0.0.1",
-  "main": "./index.js",
+  "main": "./app/nativeui.js",
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest"
   },
   "dependencies": {
+    "color": "^2.0.1",
+    "lodash": "^4.17.4",
     "react": "16.0.0",
-    "react-native": "0.51.0"
+    "react-native": "0.51.0",
+    "react-native-config": "^0.11.2"
   },
   "devDependencies": {
     "babel-jest": "22.0.2",

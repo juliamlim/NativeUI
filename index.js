@@ -1,6 +1,4 @@
-import LimboUI from './App';
-import Button from './app/el/Button';
-import Input from './app/el/Input';
+import { AppRegistry } from 'react-native';
+import App from './App';
 
-export default LimboUI;
-export { Button, Input };
+AppRegistry.registerComponent('nativeui', () => App);
