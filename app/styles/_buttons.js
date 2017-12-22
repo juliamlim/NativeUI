@@ -7,7 +7,8 @@ const button = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: colors.prm,
-    borderRadius: 100
+    borderRadius: 100,
+    margin: 5
   },
   btn__txt: {
     color: colors.lgt,
@@ -22,19 +23,23 @@ var sizes = {
 };
 
 button.btn = _.mapValues(sizes, v => {
+  var size = (50 * v) + 10;
   return {
-    paddingHorizontal:( ( v * v / 4 ) + 0.5 ) * 50 ,
-    paddingVertical: v * 5,  
+    minWidth: size,
+    maxWidth: 300,
+    paddingVertical: 6 * v,  
+    paddingHorizontal: 6 * v + 8,  
   };
 });
 
 button.btn_cr = _.mapValues(sizes, v => {
-  let size = ( v + 1 ) / 0.04;
+  var size = (30 * v) + 10;
   return {
     paddingVertical: 0,
     paddingHorizontal: 0,
     width: size,
     height: size,
+    minWidth: 0,
     borderRadius: 1000
   };
 });

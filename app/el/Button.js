@@ -34,19 +34,9 @@ export default class Button extends Component<{}> {
         ],
         }}>
         <TouchableHighlight
-          style={[
-            styles.btn_og,
-            styles.btn.md,
-            {
-              shadowColor: colors.dark.drk,
-              shadowOpacity: 0.5,
-              shadowRadius: 5,
-              shadowOffset: {
-                height: 2,
-              }
-            },
-            this.props.style, 
-            (this.props.outline) ? styles.btn_otl[this.state.color] : styles.btn_sld[this.state.color]
+          {...this.props}      
+          style={[styles.btn_og, styles.btn.md, styles.sh_1, (this.props.outline) ? styles.btn_otl[this.state.color] : styles.btn_sld[this.state.color],
+            this.props.style 
           ]}
           onPress={this.props.onPress}
           underlayColor={ 
@@ -70,7 +60,7 @@ export default class Button extends Component<{}> {
               Animated.spring( this.state.y, {
                 toValue: 0
               })
-            ]).start();   
+            ]).start();
           }}>
           {this.props.children}
         </TouchableHighlight>
@@ -78,4 +68,3 @@ export default class Button extends Component<{}> {
     );
   }
 }
-// onShowUnderlay onHideUnderlay

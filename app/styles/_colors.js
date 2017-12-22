@@ -9,7 +9,7 @@ const colors = {
   dng: Config.SUCCESS_CLR || 'rgb(229, 108, 129)',
   wrn: Config.WARNING_CLR || 'rgb(241, 173, 92)',
   drk: Config.DARK_CLR || 'rgb(71, 76, 110)',
-  lgt: Config.LIGHT_CLR || 'rgb(242,239,235)',
+  lgt: Config.LIGHTest_CLR || 'rgb(242,239,235)',
 };
 
 var trans =  _.mapValues(colors, (v) => {
