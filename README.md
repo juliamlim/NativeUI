@@ -1,10 +1,10 @@
 ## React Native UI Kit by InLimbo
 
 ### Contents
-[Styles](#styles)
-[Colors](#colors)
-[Buttons](#buttons)
-[Inputs](#inputs)
+- [Styles](#styles)
+- [Colors](#colors)
+- [Buttons](#buttons)
+- [Inputs](#inputs)
 
 Classes
 -xs
@@ -21,11 +21,11 @@ const styles = require('@_inlimbo/nativeui/styles');
 
 ## Colors
 
-To change the colors used in the kit install the **react-native-config** dependency to your project 
+To change the colors used in the kit install the `react-native-config` dependency to your project 
 ```bash
 npm i --save react-native-config
 ```
-Then create an **.env** file in your root folder and add the folowing variables.
+Then create an `.env` file in your root folder and add the folowing variables.
 ```env
 PRIMARY_UI=
 SECONDARY_UI=
@@ -50,7 +50,7 @@ const colors = require('@_inlimbo/nativeui/colors');
 -lgt // white process.env.LIGHT_CLR
 
 ## Buttons
-There are a few options for buttons and are built off of React Native's **TouchableHighlight** to use them in your project use the code below.
+There are a few options for buttons and are built off of React Native's `TouchableHighlight` to use them in your project use the code below.
 ```js
 import LimboUI from '@_inlimbo/nativeui';
 // or
