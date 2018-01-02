@@ -4,11 +4,11 @@ import {
   View,
   Modal
 } from 'react-native';
-import LimboUI from './app/nativeui';
-import { Button } from './app/nativeui';
+import LimboUI from './nativeui';
+import { Button } from './nativeui';
 
-var styles = require('./app/styles/main');
-var colors = require('./app/styles/_colors');
+var styles = require('./styles');
+var colors = require('./colors');
 
 styles.color = {
   flex: 1, 
@@ -27,6 +27,7 @@ export default class App extends Component<{}> {
   constructor(props) {
     super(props);
     this.state = {
+      email: ''
     };
   }
   render() {
@@ -45,7 +46,10 @@ export default class App extends Component<{}> {
         <View style={{ flex:1, justifyContent:'center' }}>
             <LimboUI.Input 
               label="Email"
-              inverse={true} />
+              inverse={true}
+              text={this.state.email}
+              onChangeText={text => this.setState({email:text})} 
+              />
           <View style={{flexDirection: 'row',justifyContent: 'space-between' }}>
             <LimboUI.Button 
               style={styles.btn.sm} 
@@ -80,11 +84,11 @@ export default class App extends Component<{}> {
             <Text style={styles.btn__txt}>Default</Text>
           </LimboUI.Button>
           <Button
-            color="snd"
-            outline={true}
+            color="wrn"
+            // outline={true}
             style={styles.btn_cr.lg}
             onPress={()=>{console.log('Pressed!')}}>
-            <Text style={styles.btn_otl__txt.snd}>Customized</Text>
+            <Text style={styles.btn__txt}>Customized</Text>
           </Button>
           </View>              
         </View>

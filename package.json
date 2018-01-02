@@ -2,11 +2,13 @@
   "name": "@_inlimbo/nativeui",
   "description": "UI elements for react native.",
   "homepage": "https://inlimbo.co",
-  "version": "0.0.4",
-  "main": "./app/nativeui.js",
+  "version": "0.0.9",
+  "main": "./nativeui.js",
+  "author": "Julia Lim <juliamlim@hotmail.com> (http://www.juliamlim.com)",
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
+    "test": "jest",
+    "publish": "bash ./qs"
   },
   "dependencies": {
     "color": "^2.0.1",
@@ -35,8 +37,7 @@
     "inlimbo-ui",
     "components"
   ],
-  "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://gitlab.com/inlimbo/nativeui/issues"
   }

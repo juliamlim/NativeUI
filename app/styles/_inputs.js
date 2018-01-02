@@ -1,11 +1,11 @@
 import { Platform, StyleSheet } from 'react-native';
 import _ from 'lodash';
-const colors = require("./_colors");
+const colors = require("../../colors");
 
 const input = StyleSheet.create({
   ipt_og: {
-    paddingVertical: 10,
-    paddingHorizontal: 20,
+    paddingVertical: 9,
+    paddingHorizontal: 16,
     borderWidth: 2,
     borderRadius: 100,
     marginBottom: 5
@@ -14,7 +14,7 @@ const input = StyleSheet.create({
     color: colors.drk,
     fontSize: 12,
     paddingVertical: 5,
-    paddingHorizontal: 20
+    paddingHorizontal: 18
   }
 });
 input.ipt__lb = {

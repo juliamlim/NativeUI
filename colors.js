@@ -13,7 +13,7 @@ const colors = {
 };
 
 var trans =  _.mapValues(colors, (v) => {
-  return Color(v).alpha(0.5);
+  return Color(v).alpha(0.3);
 });
 var dark =  _.mapValues(colors, (v) => {
   return Color(v).darken(0.3);

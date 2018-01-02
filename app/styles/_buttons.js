@@ -1,6 +1,6 @@
 import { Platform, StyleSheet } from 'react-native';
 import _ from 'lodash';
-const colors = require("./_colors");
+const colors = require("../../colors");
 
 const button = StyleSheet.create({
   btn_og: {

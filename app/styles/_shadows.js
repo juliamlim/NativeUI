@@ -1,5 +1,5 @@
 import { Platform, StyleSheet } from 'react-native';
-const colors = require("./_colors");
+const colors = require("../../colors");
 
 const shadow = StyleSheet.create({
   sh_1: {

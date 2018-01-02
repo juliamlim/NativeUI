@@ -7,8 +7,8 @@ import {
   Easing
 } from 'react-native';
 
-const styles = require('../styles/main');
-const colors = require('../styles/_colors');
+const styles = require('../../styles');
+const colors = require('../../colors');
 
 export default class Button extends Component<{}> {
   constructor(props) {

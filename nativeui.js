@@ -1,10 +1,6 @@
 // Components
-import Button from './el/Button';
-import Input from './el/Input';
-
-// Style Guide
-import Colors from './styles/_colors';
-import Styles from './styles/main';
+import Button from './app/el/Button';
+import Input from './app/el/Input';
 
 // InLimbo UI Object
 const LimboUI = {

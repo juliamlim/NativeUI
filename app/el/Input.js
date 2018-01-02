@@ -5,7 +5,7 @@ import {
   Animated,
   Easing
 } from 'react-native';
-const styles = require('../styles/main');
+const styles = require('../../styles');
 
 export default class Input extends Component<{}> {
   constructor(props) {
@@ -26,8 +26,7 @@ export default class Input extends Component<{}> {
         style={[styles.ipt_og, 
           (this.props.inverse) ? styles.ipt.lgt : styles.ipt.drk,
           this.props.style]}
-        onChangeText={(text) => this.setState({text})}
-        value={this.state.text} />
+        />
       </Animated.View>      
     );
   }
